@@ -6,7 +6,7 @@ The goal of this project is to define simple infrastructure as code scenarios ta
 The targeted audience are System Administrators who did not embrace the transformation toward abstracted computing.
 
 ![From bare metal to serverless, from screw driver to coding](./img/serverless-abstraction.png)
-Credits go to @lmammino for detailing accordingly the concepts around the evolution of the runtime here
+Credits go to @lmammino for detailing accordingly the concepts around the evolution of the runtime here :tada:
 
 >From Ops to DevOps and from DevOps to No Ops
 
