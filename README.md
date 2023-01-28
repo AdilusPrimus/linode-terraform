@@ -1,27 +1,71 @@
-# Linode Terraform provisioning training material
+# Phase 1 - Virtual Infrastructure provisioning leveraging VPS
 
-This is a simple cloud Linux environments (PaaS) scenario, where with time we'll be comitting simple SREs environments provisonning scenario.
+## The intention
 
->Keeping in simple and clear is the motto here.
+The goal of this project is to define simple infrastructure as code scenarios targeting training materials.
+The targeted audience are System Administrators who did not embrace the transformation toward abstracted computing.
 
-We want to leverage the best infrastructure as code design patterns and practises.
-In bigger corporations, there still a lot to be made for implementing an SRE culture (as well as real agility), that will bridge the gap between softare designers and system administrators.
+![From bare metal to serverless, from screw driver to coding](./img/serverless-abstraction.png)
+Credits go to @lmammino for detailing accordingly the concepts around the evolution of the runtime here :tada:
 
-Another goal would be to train the technical instructors, by catalyzing their understaning on the explored capabilitie.
-By scafoldding the standard proviinning scenarios we'll try toprovide as much abstraction and ideas to help them master the exposed subjets, thus helping us grow this beautiful community.
+>From Ops to DevOps and from DevOps to No Ops
+
+We want to help the system administrators to become SREs and to stat thinking a little bit more as software engineers.
+
+Through simple cloud provisioning scenario, and service deployment, we will try to cover the most common use cases, while using the simplest approaches for deploying the same services from dedicated node to containers and then as functions.
+
+>Keeping in simple and clean is the motto here.
+
+## The motivation
+
+We want to leverage the best infrastructure as code design patterns and practices.
+In bigger corporations, there still a lot to be made for implementing an SRE culture (as well as real agility), that will bridge the gap between software designers and system administrators.
+
+Another goal would be to train the technical instructors, by catalyzing their understanding on the explored capabilities.
+By scaffolding the standard provisioning scenarios we'll try to provide as much abstraction and ideas to help them master the exposed subjects, thus helping us grow this beautiful community.
 
 >100 000 000 subscribed accounts already
 
-Artificial intelligence (ChatGPT, Pilote) will also be explored with the goal to leveraged as much as possible busines cases that should not require our involvement anymore.
+## The how to
 
->Time is the most precious thing we have and we should invest it perfeting our understanding and resolving as much problems for the sake of the following generations
+For all phases, leveraging Github capabilities since they understand best the software delivery lifecycle (SDLC) and they back it well!
 
-AI generated snipets will be tagged and our engagement with these platforma explained.
+### Virtual private server phrase
 
-Since the wheel ws already invented, the rule of engagement is to integrste as much as possible the existin solutions.
+* Leveraging Hashicorp Terraform to code the infrastructure provisioning.
+* Leveraging Linode cloud provider since they understand best the developers needs
 
-The goal is to promote peace and solidaity so leveraging as much as possible open sourced framework will be the path to follow.
+### Containerization phase
 
-The training material promotes the positive embracement of technology and scafolds the SDLC by leveraging as much as possible the CI/CD/SAST capabilities of Github SaaS.
+> TBD
+>
+### Function as a Service phase
 
-> If by any chance it happened that you found this unmarketed initiative, we'll be honnored with your collaboration, sharing of ideas and best practises.
+> TBD
+
+## AI
+
+Artificial intelligence (ChatGPT, Pilot) will also be explored with the goal to leveraged as much as possible business cases that should not require our involvement anymore.
+
+>Time is the most precious thing we have and we should invest it perfecting our understanding and resolving as much problems for the sake of the following generations
+
+AI generated code snippets will be tagged and our engagement with these platforms explained.
+
+## The philosophy
+
+Since the wheel was already invented, the rule of engagement is to integrate as much as possible the existing solutions.
+ti
+The goal is to promote peace and solidarity so leveraging as much as possible open sourced framework will be the path to follow.
+
+The training material promotes the positive embracement of technology and scaffolds the SDLC by leveraging as much as possible the CI/CD/SAST capabilities of Github SaaS.
+
+> If by any chance it happened that you found this non marketed initiative, we'll be honored with your collaboration, sharing of ideas and best practices.
+
+## The IaC covered scenarios
+
+Feel free to contribute any common scenario that would benefit the transformation mouvement
+
+### Deploying a Linux Node on the Cloud by script
+
+Runtime: Linode SaaS, Terraform, Ubuntu 18 LTS
+SDLC: Github, Visual Studio Code
