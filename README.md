@@ -30,7 +30,7 @@ By scaffolding the standard provisioning scenarios we'll try to provide as much 
 
 For all phases, leveraging Github capabilities since they understand best the software delivery lifecycle (SDLC) and they back it well!
 
-### Virtual private server phrase
+### Virtual private server phase
 
 * Leveraging Hashicorp Terraform to code the infrastructure provisioning.
 * Leveraging Linode cloud provider since they understand best the developers needs
