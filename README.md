@@ -1,4 +1,4 @@
-# Linode Terraform provisioning training material
+# Phase 1 - Virtual Infrastructure provisioning leveraging VPS
 
 ## The intention
 
