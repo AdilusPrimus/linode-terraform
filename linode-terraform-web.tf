@@ -13,24 +13,32 @@
 # TF_LOG=debug terraform plan
 #  
 
-# Generating the plan 
-# terraform plan -var-file=env.tfvars -out linode-linux-standard.plan
+# tfvars extensions is prefixed with .auto since it is the namin convention if we want the variables to be
+# taken in consideration in Hashicorp cloud tf workspace
+
+# Generating the plan
+# terraform plan -var-file=env.auto.tfvars -out linode-linux-standard.plan
 # Making the plan human readable
 # terraform show -no-color linode-linux-standard.plan > plan.txt
 
 # Provisionning VM
-# terraform apply -var-file=env.tfvars
+# terraform apply -var-file=env.auto.tfvars tf
 
 # Deleting environment 
 # Prior to running the destroy command, you can run the plan command with the -destroy option to see which servers would be removed:
 # terraform plan -destroy
 # If ok then
-# terraform destroy -var-file=env.tfvars
-
-}
+# terraform destroy -var-file=env.auto.tfvars
 
 # Next section was coded by a human: alteration of functions by AI will be indicated
 terraform {
+
+    cloud {
+      organization = "innovarelabs"
+      workspaces {
+      name = "linode-terraform"
+      }
+    }  
   required_providers {
     linode = {
       source  = "linode/linode"
