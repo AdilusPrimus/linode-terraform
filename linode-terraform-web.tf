@@ -36,7 +36,7 @@ terraform {
     cloud {
       organization = "Innovarelabs"
       workspaces {
-      name = "linode-terraform"
+        name = "linode-terraform"
       }
     }  
   required_providers {
