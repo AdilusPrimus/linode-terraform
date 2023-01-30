@@ -3,14 +3,14 @@
 ## The intention
 
 The goal of this project is to define simple infrastructure as code scenarios targeting training materials.
-The targeted audience are System Administrators who did not embrace the transformation toward abstracted computing.
+The targeted audience are syatem administrators who did not yet embrace the transformation toward abstracted computing.
 
 ![From bare metal to serverless, from screw driver to coding](./img/serverless-abstraction.png)
 Credits go to @lmammino for detailing accordingly the concepts around the evolution of the runtime here :tada:
 
 >From Ops to DevOps and from DevOps to No Ops
 
-We want to help the system administrators to become SREs and to stat thinking a little bit more as software engineers.
+We want to help the system administrators to become SREs and to start thinking a little bit more as software engineers.
 
 Through simple cloud provisioning scenario, and service deployment, we will try to cover the most common use cases, while using the simplest approaches for deploying the same services from dedicated node to containers and then as functions.
 
@@ -30,7 +30,7 @@ By scaffolding the standard provisioning scenarios we'll try to provide as much 
 
 For all phases, leveraging Github capabilities since they understand best the software delivery lifecycle (SDLC) and they back it well!
 
-### Virtual private server phrase
+### Virtual private server phase
 
 * Leveraging Hashicorp Terraform to code the infrastructure provisioning.
 * Leveraging Linode cloud provider since they understand best the developers needs
