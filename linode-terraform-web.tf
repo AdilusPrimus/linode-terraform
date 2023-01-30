@@ -27,8 +27,6 @@
 # If ok then
 # terraform destroy -var-file=env.tfvars
 
-}
-
 # Next section was coded by a human: alteration of functions by AI will be indicated
 terraform {
   required_providers {
