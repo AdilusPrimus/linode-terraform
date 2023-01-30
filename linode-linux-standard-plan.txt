@@ -1,0 +1,48 @@
+
+Terraform used the selected providers to generate the following execution
+plan. Resource actions are indicated with the following symbols:
+  + create
+
+Terraform will perform the following actions:
+
+  # linode_instance.terraform-web will be created
+  + resource "linode_instance" "terraform-web" {
+      + authorized_keys    = [
+          + (sensitive value),
+        ]
+      + backups            = (known after apply)
+      + backups_enabled    = (known after apply)
+      + boot_config_label  = (known after apply)
+      + booted             = (known after apply)
+      + group              = (sensitive value)
+      + id                 = (known after apply)
+      + image              = (sensitive value)
+      + ip_address         = (known after apply)
+      + ipv4               = (known after apply)
+      + ipv6               = (known after apply)
+      + label              = (sensitive value)
+      + private_ip_address = (known after apply)
+      + region             = (sensitive value)
+      + resize_disk        = false
+      + root_pass          = (sensitive value)
+      + specs              = (known after apply)
+      + status             = (known after apply)
+      + swap_size          = (known after apply)
+      + type               = (sensitive value)
+      + watchdog_enabled   = true
+
+      + alerts {
+          + cpu            = (known after apply)
+          + io             = (known after apply)
+          + network_in     = (known after apply)
+          + network_out    = (known after apply)
+          + transfer_quota = (known after apply)
+        }
+    }
+
+Plan: 1 to add, 0 to change, 0 to destroy.
+
+─────────────────────────────────────────────────────────────────────────────
+
+Note: You didn't use the -out option to save this plan, so Terraform can't
+guarantee to take exactly these actions if you run "terraform apply" now.

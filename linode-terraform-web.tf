@@ -6,47 +6,49 @@
 # The following block of code defines variables that are used to set the properties of the "linode_instance" resource. "linode_api_key", "public_ssh_key" and "root_pwd" are sensitive variables, which means that their values should be protected and not exposed in plain text.
 # Finally, the code creates a Linode instance with the specified properties and deploys the Linux Node on the cloud by script.
 
-# Simple Human coding: alteration of functions by AI will be indicated as well
+# Please execute in a Linux shell (for Windows activate WSL)
+# Usage:
+# 
+# Debug mode can be applied to the plan command if you need to perform troubleshooting:
+# TF_LOG=debug terraform plan
+#  
+
+# Generating the plan 
+# terraform plan -var-file=env.tfvars -out linode-linux-standard.plan
+# Making the plan human readable
+# terraform show -no-color linode-linux-standard.plan > plan.txt
+
+# Provisionning VM
+# terraform apply -var-file=env.tfvars
+
+# Deleting environment 
+# Prior to running the destroy command, you can run the plan command with the -destroy option to see which servers would be removed:
+# terraform plan -destroy
+# If ok then
+# terraform destroy -var-file=env.tfvars
+
+}
+
+# Next section was coded by a human: alteration of functions by AI will be indicated
 terraform {
   required_providers {
     linode = {
-      source = "linode/linode"
+      source  = "linode/linode"
       version = "1.27.1"
     }
   }
 }
 
 provider "linode" {
-  token = "linode_api_key"
+  token = var.linode_api_key
 }
 
 resource "linode_instance" "terraform-web" {
-        image           = var.linode_image
-        label           = var.linode_image_label
-        group           = var.Linode_image_group
-        region          = var.linode_image_deployment_region
-        type            = var.linode_image_type
-        authorized_keys = [ var.public_ssh_key ]
-        root_pass       = var.root_pwd
-}
-
-# System environment exported variable
-variable "linode_api_key" {
-  description = "Linode PaaS API key"
-  type        = string
-  sensitive   = true
-}
-
-# System environment exported variable
-variable "public_ssh_key" {
-  description = "Linode nodes public ssh"
-  type        = string
-  sensitive   = true
-}
-
-# System environment exported variable
-variable "root_pwd" {
-  description = "Node root ssh password"
-  type        = string
-  sensitive   = true
+  image           = var.linode_image
+  label           = var.linode_image_label
+  group           = var.Linode_image_group
+  region          = var.linode_image_deployment_region
+  type            = var.linode_image_type
+  authorized_keys = [ var.public_ssh_key ]
+  root_pass       = var.root_pwd
 }
