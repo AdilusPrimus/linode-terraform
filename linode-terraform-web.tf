@@ -34,7 +34,7 @@
 terraform {
 
     cloud {
-      organization = "org-WLsWrHL3sHWoinT1"
+      organization = "Innovarelabs"
       workspaces {
       name = "linode-terraform"
       }
