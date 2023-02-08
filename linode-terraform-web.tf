@@ -33,12 +33,12 @@
 # Next section was coded by a human: alteration of functions by AI will be indicated
 terraform {
 
-    cloud {
-      organization = "innovarelabs"
-      workspaces {
+  cloud {
+    organization = "innovarelabs"
+    workspaces {
       name = "linode-terraform"
-      }
-    }  
+    }
+  }  
   required_providers {
     linode = {
       source  = "linode/linode"
